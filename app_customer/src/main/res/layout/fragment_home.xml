@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.youth.banner.Banner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_create_order">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="@dimen/home_icon_size"
+                        app:srcCompat="@mipmap/ic_home_create_order"
+                        android:tint="@color/alizarin"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="一键下单"
+                        android:textSize="@dimen/home_font_size"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:background="@color/codeGary"
+                    android:layout_gravity="center_vertical"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_order">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="@dimen/home_icon_size"
+                        app:srcCompat="@mipmap/ic_home_order"
+                        android:tint="@color/orange"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的订单"
+                        android:textSize="@dimen/home_font_size"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:background="@color/codeGary"
+                    android:layout_gravity="center_vertical"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_message">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="@dimen/home_icon_size"
+                        app:srcCompat="@mipmap/ic_home_message"
+                        android:tint="@color/nephritis"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="消息中心"
+                        android:textSize="@dimen/home_font_size"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_user">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="@dimen/home_icon_size"
+                        app:srcCompat="@mipmap/ic_home_user"
+                        android:tint="@color/peterRiver"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="个人中心"
+                        android:textSize="@dimen/home_font_size"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:background="@color/codeGary"
+                    android:layout_gravity="center_vertical"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_logout">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_icon_size"
+                        android:layout_height="@dimen/home_icon_size"
+                        app:srcCompat="@mipmap/ic_home_out"
+                        android:tint="@color/amethyst"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="退出登录"
+                        android:textSize="@dimen/home_font_size"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="60dp"
+                    android:background="@color/codeGary"
+                    android:layout_gravity="center_vertical"></View>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

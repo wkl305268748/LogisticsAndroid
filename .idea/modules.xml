@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/LogisticsAndroid.iml" filepath="$PROJECT_DIR$/LogisticsAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LogisticsAndroid.iml" filepath="$PROJECT_DIR$/LogisticsAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_customer/app_customer.iml" filepath="$PROJECT_DIR$/app_customer/app_customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_driver/app_driver.iml" filepath="$PROJECT_DIR$/app_driver/app_driver.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,144 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.kenny.logistics"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 3
+        versionName "1.3"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi' ,'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    signingConfigs {
+        release {
+            v1SigningEnabled true
+            v2SigningEnabled true
+            storeFile file("./kenny.jks")
+            storePassword "4811298"
+            keyAlias "logistics"
+            keyPassword "4811298"
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.google.com' }
+    jcenter()
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:support-v13:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    // 引入multidex库
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //View注解库
+    implementation 'com.jakewharton:butterknife:9.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0'
+
+    //Fragment架构
+    //https://github.com/YoKeyword/Fragmentation
+    implementation 'me.yokeyword:fragmentation:1.3.8'
+
+    //retrofit
+    //http://square.github.io/retrofit/
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+
+    //RxJava2
+    //https://github.com/ReactiveX/RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+    //https://github.com/ReactiveX/RxAndroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    //Bugly
+    api('com.tencent.bugly:crashreport_upgrade:latest.release') {
+        exclude group: 'com.android.support'
+    }
+    api('com.tencent.bugly:nativecrashreport:latest.release') {
+        exclude group: 'com.android.support'
+    }
+
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //loading
+    implementation 'com.wang.avi:library:2.1.3'
+
+    //Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.6'
+    annotationProcessor 'org.projectlombok:lombok:1.18.6'
+
+    //下拉刷新，上拉加载
+    //https://github.com/scwang90/SmartRefreshLayout
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+
+    //BRVAH 列表
+    //http://www.recyclerview.org/
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.35'
+
+    //轮播图
+    //https://github.com/youth5201314/banner
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    //glide图片加载
+    //https://github.com/bumptech/glide
+    implementation 'com.github.bumptech.glide:glide:4.1.1'
+
+    //Favor
+    //https://github.com/soarcn/Favor
+    implementation 'com.cocosw:favor:0.2.0@aar'
+    //https://github.com/javiersantos/MaterialStyledDialogs
+    implementation 'com.github.javiersantos:MaterialStyledDialogs:2.1'
+    //省市区三级联动
+    //https://github.com/crazyandcoder/citypicker
+    implementation 'liji.library.dev:citypickerview:1.1.0'
+    //MD日期选择器
+    //compile 'com.wdullaer:materialdatetimepicker:3.2.2'
+    implementation 'co.infinum:materialdatetimepicker-support:3.2.2'
+
+
+    //高德地图
+    //搜索功能
+    implementation 'com.amap.api:search:latest.integration'
+    //导航功能
+    implementation 'com.amap.api:navi-3dmap:latest.integration'
+}

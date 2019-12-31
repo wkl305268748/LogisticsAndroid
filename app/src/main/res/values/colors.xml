@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题色-->
+    <color name="colorPrimary">#2381ff</color>
+    <color name="color_theme">#2381ff</color>
+
+    <!--通用-->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_text">#525159</color>
+    <color name="gray">#989898</color>
+    <color name="gray_line">#e0e0e0</color>
+    <color name="yellow">#fddd34</color>
+    <color name="yellow_select">#f1c40f</color>
+
+
+    <color name="orange">#e67e22</color>
+    <color name="blue">#3498db</color>
+    <color name="blue_select">#2381ff</color>
+    <color name="green">#4cd137</color>
+    <color name="green_button">#70bf40</color>
+    <color name="pink">#e056fd</color>
+    <color name="red">#eb4d4b</color>
+
+
+    <!--主页Color-->
+    <color name="color_main_backgroud">#ecf0f1</color>
+    <color name="color_main_bar_unselect">#bdc3c7</color>
+    <color name="color_main_bar_background">#ffffff</color>
+    <color name="color_main_bar_select">#2381ff</color>
+    <color name="color_main_toolbar_title">#ffffff</color>
+    <!--订单Color-->
+    <color name="color_order_info">#9c9c9c</color>
+    <color name="color_order_main">#000000</color>
+    <color name="color_order_warning">#e74c3c</color>
+
+    <color name="color_order_pending">#2ecc71</color>
+    <color name="color_order_taking">#3498db</color>
+    <color name="color_order_sign">#9b59b6</color>
+
+    <color name="color_order_line">#9c9c9c</color>
+    <color name="color_order_dotted_line">#9c9c9c</color>
+
+    <!--其他-->
+    <color name="clouds">#ecf0f1</color>
+    <color name="sliver">#bdc3c7</color>
+    <color name="maincolor">#ff7474</color>
+    <color name="codeGary">#9e9e9e</color>
+    <color name="asbestos">#7f8c8d</color>
+    <color name="alizarin">#e74c3c</color>
+    <color name="nephritis">#27ae60</color>
+    <color name="peterRiver">#3498db</color>
+    <color name="amethyst">#9b59b6</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+</resources>
